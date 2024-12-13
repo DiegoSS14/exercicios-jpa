@@ -4,6 +4,7 @@ import infra.DAO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
 @Table(name = "produtos") // Anotation que vai nomear a tabela
 @Entity // Anotation que vai vincular a classe ao banco de dados
 @Builder
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Produto {
